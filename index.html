@@ -17,7 +17,8 @@
         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Clientes</button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#" onclick="mostrarClientes()">Ver Clientes</a></li>
-          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregarCliente">Agregar Cliente</a></li>
+          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregarCliente">Agregar
+              Cliente</a></li>
         </ul>
       </div>
 
@@ -25,13 +26,21 @@
         <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">Equipos</button>
         <ul class="dropdown-menu">
           <li><a class="dropdown-item" href="#" onclick="mostrarEquipos()">Ver Equipos</a></li>
-          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregarEquipo">Agregar Equipo</a></li>
+          <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalAgregarEquipo">Agregar
+              Equipo</a></li>
         </ul>
       </div>
     </div>
 
     <!-- Contenido dinámico -->
-    <div id="tabla-contenido"></div>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <!-- contenido de la tabla -->
+         <div id="tabla-contenido"></div>
+      </table>
+    </div>
+
+    
 
     <!-- Modales -->
     <div class="modal fade" id="modalAgregarCliente" tabindex="-1">

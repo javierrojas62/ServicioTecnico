@@ -49,7 +49,7 @@ async function mostrarClientes() {
         return;
     }
 
-    let html = `<h3>Clientes</h3><table class="table table-bordered">
+    let html = `<div class="table-responsive">h3>Clientes</h3><table class="table table-bordered">
         <thead><tr><th>CUIL</th><th>Nombre</th><th>Dirección</th><th>Teléfono</th><th>Correo</th><th>Acciones</th></tr></thead><tbody>`;
 
     data.forEach(cl => {
@@ -63,7 +63,7 @@ async function mostrarClientes() {
         </tr>`;
     });
 
-    html += `</tbody></table>`;
+    html += `</tbody></table></div>`;
     tablaContenido.innerHTML = html;
 }
 
